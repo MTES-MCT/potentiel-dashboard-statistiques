@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { SignJWT } from "jose";
 import { z } from "zod";
 
-import StatistiquesDGECPage from "@/pages/StatistiquesDGEC.page";
+import StatistiquesDGECPage from "@/app/pages/StatistiquesDGEC.page";
 
 export const metadata: Metadata = {
   title: "Statistiques DGEC - Potentiel",
