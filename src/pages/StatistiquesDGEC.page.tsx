@@ -12,16 +12,16 @@ export const StatistiquesDGECPage: FC<StatistiquesDGECPageProps> = ({
 }) => (
   <>
     <h1
-      className={`my-5 text-3xl text-center leading-8 font-bold text-[#000091]`}
+      className={`mt-15 text-3xl text-center leading-8 font-bold text-[#000091]`}
     >
       Potentiel en chiffres - Dashboard DGEC
     </h1>
-    <div className="fr-container my-10">
+    <div className="my-10">
       <IframeResizer
         license="GPLv3"
         src={dashboardIframeUrl}
         style={{ width: "100%", height: "auto" }}
-        className="mt-10"
+        className="mt-15"
       />
     </div>
   </>

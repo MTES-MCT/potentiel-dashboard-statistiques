@@ -22,7 +22,7 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="fr">
-      <body className={`antialiased px-4 ${marianneFont.className}`}>
+      <body className={`antialiased px-8 ${marianneFont.className}`}>
         {children}
       </body>
     </html>
