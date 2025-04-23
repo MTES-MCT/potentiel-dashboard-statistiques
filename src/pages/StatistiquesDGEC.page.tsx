@@ -11,7 +11,9 @@ export const StatistiquesDGECPage: FC<StatistiquesDGECPageProps> = ({
   dashboardIframeUrl,
 }) => (
   <>
-    <h1 className={`my-5 text-3xl text-center leading-8 font-bold`}>
+    <h1
+      className={`my-5 text-3xl text-center leading-8 font-bold text-[#000091]`}
+    >
       Potentiel en chiffres - Dashboard DGEC
     </h1>
     <div className="fr-container my-10">

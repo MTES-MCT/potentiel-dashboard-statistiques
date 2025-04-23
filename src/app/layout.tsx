@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import React from "react";
+import localFont from "next/font/local";
+
+const marianneFont = localFont({
+  src: "./fonts/Marianne-Medium.woff2",
+  display: "swap",
+});
 
 import "../globals.css";
 
@@ -16,7 +22,9 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="fr">
-      <body className={`antialiased px-4`}>{children}</body>
+      <body className={`antialiased px-4 ${marianneFont.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
