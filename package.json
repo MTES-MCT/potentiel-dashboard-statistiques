@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@iframe-resizer/react": "^5.4.5",
-    "jose": "^6.0.10",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
