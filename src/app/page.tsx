@@ -16,7 +16,7 @@ export default async function Page() {
   const { METABASE_URL, METABASE_DASHBOARD_TOKEN } = schema.parse(process.env);
 
   const dashboardIframeUrl = new URL(
-    `${METABASE_URL}/${METABASE_DASHBOARD_TOKEN}`
+    `${METABASE_URL}/public/dashboard/${METABASE_DASHBOARD_TOKEN}`
   );
 
   return (
