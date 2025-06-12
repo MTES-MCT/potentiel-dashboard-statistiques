@@ -15,7 +15,7 @@ export default function StatistiquesDGECPage({
       <h1
         className={`mt-15 text-3xl text-center leading-8 font-bold text-[#000091]`}
       >
-        Potentiel en chiffres - Dashboard DGEC
+        Tableau de bord Potentiel
       </h1>
       <div className="my-10">
         <IframeResizer
