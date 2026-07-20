@@ -1,10 +1,10 @@
-import { Metadata } from "next";
-import { z } from "zod";
+import type { Metadata } from 'next';
+import { z } from 'zod';
 
-import StatistiquesDGECPage from "@/app/pages/StatistiquesDGEC.page";
+import StatistiquesDGECPage from '@/app/pages/StatistiquesDGEC.page';
 
 export const metadata: Metadata = {
-  title: "Statistiques DGEC - Potentiel",
+  title: 'Statistiques DGEC - Potentiel',
 };
 
 const schema = z.object({
@@ -16,10 +16,8 @@ export default async function Page() {
   const { METABASE_URL, METABASE_DASHBOARD_TOKEN } = schema.parse(process.env);
 
   const dashboardIframeUrl = new URL(
-    `${METABASE_URL}/public/dashboard/${METABASE_DASHBOARD_TOKEN}`
+    `${METABASE_URL}/public/dashboard/${METABASE_DASHBOARD_TOKEN}`,
   );
 
-  return (
-    <StatistiquesDGECPage dashboardIframeUrl={dashboardIframeUrl.toString()} />
-  );
+  return <StatistiquesDGECPage dashboardIframeUrl={dashboardIframeUrl.toString()} />;
 }

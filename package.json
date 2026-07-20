@@ -6,25 +6,27 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check --write ."
   },
   "dependencies": {
     "@iframe-resizer/react": "5.4.5",
     "next": "15.4.10",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "zod": "3.24.3"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.5.4",
     "@tailwindcss/postcss": "4",
     "@types/node": "20",
     "@types/react": "19",
     "@types/react-dom": "19",
-    "eslint": "9",
-    "eslint-config-next": "15.2.4",
     "sass": "1.87.0",
     "tailwindcss": "4",
-    "typescript": "5"
+    "typescript": "5.9.3",
+    "gitmoji-cli": "9.7.0"
   },
   "optionalDependencies": {
     "@tailwindcss/oxide-linux-x64-gnu": "4.1.4",
