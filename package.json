@@ -11,25 +11,29 @@
     "check": "biome check --write ."
   },
   "dependencies": {
-    "@iframe-resizer/react": "5.4.5",
-    "next": "15.4.10",
+    "@iframe-resizer/react": "5.5.9",
+    "next": "16.2.10",
     "react": "19.2.7",
     "react-dom": "19.2.7",
-    "zod": "3.24.3"
+    "zod": "4.4.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.4",
-    "@tailwindcss/postcss": "4",
-    "@types/node": "20",
-    "@types/react": "19",
-    "@types/react-dom": "19",
-    "sass": "1.87.0",
+    "@biomejs/biome": "2.5.4",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "26.1.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "gitmoji-cli": "9.7.0",
+    "sass": "1.101.3",
     "tailwindcss": "4",
-    "typescript": "5.9.3",
-    "gitmoji-cli": "9.7.0"
+    "typescript": "5.9.3"
   },
   "optionalDependencies": {
-    "@tailwindcss/oxide-linux-x64-gnu": "4.1.4",
-    "lightningcss-linux-x64-gnu": "1.29.3"
+    "@tailwindcss/oxide-linux-x64-gnu": "4.3.3",
+    "lightningcss-linux-x64-gnu": "1.33.0"
+  },
+  "overrides": {
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3"
   }
 }
