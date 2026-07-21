@@ -1,18 +1,17 @@
-import type { Metadata } from "next";
-import React from "react";
-import localFont from "next/font/local";
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import type React from 'react';
 
 const marianneFont = localFont({
-  src: "./fonts/Marianne-Medium.woff2",
-  display: "swap",
+  src: './fonts/Marianne-Medium.woff2',
+  display: 'swap',
 });
 
-import "../globals.css";
+import '../globals.css';
 
 export const metadata: Metadata = {
-  title: "Potentiel",
-  description:
-    "Facilite le parcours des producteurs d'énergies renouvelables électriques",
+  title: 'Potentiel',
+  description: "Facilite le parcours des producteurs d'énergies renouvelables électriques",
 };
 
 type RootLayoutProps = Readonly<{
@@ -22,9 +21,7 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="fr">
-      <body className={`antialiased px-8 ${marianneFont.className}`}>
-        {children}
-      </body>
+      <body className={`antialiased px-8 ${marianneFont.className}`}>{children}</body>
     </html>
   );
 }
